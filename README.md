@@ -11,9 +11,6 @@ Explore live price data, technical indicators, and compare performance across mu
 - ⚡ Cached data fetching for fast repeat interactions
 - 🎨 Custom dark theme UI
 
-## Demo
-
-*(Add a screenshot or GIF here once deployed — e.g. via [Streamlit Community Cloud](https://streamlit.io/cloud))*
 
 ## Getting Started
 
