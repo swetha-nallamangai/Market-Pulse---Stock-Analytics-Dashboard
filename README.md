@@ -1,157 +1,51 @@
-# 📈 Market Pulse
+# 📈 Market Pulse — Stock Analytics Dashboard
 
-A real-time stock analytics dashboard built with Streamlit, yfinance, and Plotly.
+A real-time stock analytics dashboard built with **Streamlit**, **yfinance**, and **Plotly**.
+Explore live price data, technical indicators, and compare performance across multiple tickers.
 
-Explore live price data, technical indicators, and compare performance across multiple tickers — including international markets like NSE, BSE, NYSE, NASDAQ, and more.
+## Features
 
----
+- 🔍 **Single Stock View** — candlestick chart with SMA20/SMA50 moving averages, volume, and RSI indicator
+- ⚖️ **Compare Mode** — normalized % performance comparison across multiple tickers
+- 📊 Live data pulled from Yahoo Finance (no API key required)
+- ⚡ Cached data fetching for fast repeat interactions
+- 🎨 Custom dark theme UI
 
-## ✨ Features
+## Demo
 
-### 🔍 Single Stock View
+*(Add a screenshot or GIF here once deployed — e.g. via [Streamlit Community Cloud](https://streamlit.io/cloud))*
 
-* Interactive candlestick chart
-* SMA20 and SMA50 moving averages
-* Volume analysis
-* RSI (Relative Strength Index) indicator
+## Getting Started
 
-### ⚖️ Compare Mode
-
-* Compare multiple stocks simultaneously
-* Normalized percentage performance visualization
-* Easy benchmarking across sectors and markets
-
-### 🌍 Global Market Support
-
-Supports Yahoo Finance ticker symbols from:
-
-* US Markets (NYSE, NASDAQ)
-* NSE (India)
-* BSE (India)
-* LSE (London)
-* Other Yahoo Finance supported exchanges
-
-### 📊 Live Market Data
-
-* Real-time market data from Yahoo Finance
-* No API key required
-
-### ⚡ Fast Performance
-
-* Streamlit caching for faster repeated queries
-* Efficient data loading and processing
-
-### 🎨 Modern UI
-
-* Custom dark theme
-* Responsive and interactive charts
-* Clean dashboard layout
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
+### 1. Clone the repo
 ```bash
-git clone https://github.com/swetha-nallamangai/market-pulse.git
+git clone https://github.com/<your-username>/market-pulse.git
 cd market-pulse
 ```
 
-### 2. Create a Virtual Environment (Recommended)
-
-**Windows**
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-
+### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Application
-
+### 3. Run the app
 ```bash
 streamlit run app.py
 ```
 
-The application will open automatically in your browser at:
+The app will open in your browser at `http://localhost:8501`.
 
-```text
-http://localhost:8501
-```
+## Tech Stack
 
----
+- [Streamlit](https://streamlit.io/) — UI framework
+- [yfinance](https://github.com/ranaroussi/yfinance) — market data
+- [Plotly](https://plotly.com/python/) — interactive charts
+- [Pandas](https://pandas.pydata.org/) / [NumPy](https://numpy.org/) — data processing
 
-## 📌 Ticker Symbol Reference
+## Deploy for Free
 
-| Market           | Suffix | Example         |
-| ---------------- | ------ | --------------- |
-| US (NASDAQ/NYSE) | None   | AAPL, MSFT      |
-| India (NSE)      | .NS    | INFY.NS, TCS.NS |
-| India (BSE)      | .BO    | RELIANCE.BO     |
-| London (LSE)     | .L     | HSBA.L          |
+Push this repo to GitHub, then deploy instantly on [Streamlit Community Cloud](https://share.streamlit.io/) — point it at `app.py` and you're live.
 
-> Note: You can find ticker symbols directly on Yahoo Finance.
+## License
 
----
-
-## 🛠️ Tech Stack
-
-* **Streamlit** — Interactive web application framework
-* **yfinance** — Yahoo Finance market data
-* **Plotly** — Interactive financial visualizations
-* **Pandas** — Data manipulation and analysis
-* **NumPy** — Numerical computations
-
----
-
-## 📂 Project Structure
-
-```text
-market-pulse/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── utils/
-│   ├── data.py
-│   └── indicators.py
-│
-├── assets/
-│   └── dashboard.png
-│
-└── .gitignore
-```
-
----
-
-## 🔮 Future Enhancements
-
-* Portfolio tracking
-* Watchlists
-* News sentiment analysis
-* AI-powered stock insights
-* Export reports to PDF/Excel
-* Additional technical indicators
-
----
-
-Tech Stack
-
-Streamlit — UI framework
-yfinance — market data
-Plotly — interactive charts
-Pandas / NumPy — data processing
+MIT
